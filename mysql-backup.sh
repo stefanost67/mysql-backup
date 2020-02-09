@@ -2,6 +2,7 @@
 
 BACKUP_FOLDER="/opt/mysql/backup"
 NOW=$(date "+%d")
+
 GZIP="$(which gzip)"
 MYSQLDUMP="$(which mysqldump)"
 
@@ -15,3 +16,6 @@ MUSER="root"
 
 FILE=$BACKUP_FOLDER/backup-$NOW.sql.gz
 $MYSQLDUMP -h $MHOST -u $MUSER -p$MPASS --databases $MDB | $GZIP -9 > $FILE 
+
+
+
