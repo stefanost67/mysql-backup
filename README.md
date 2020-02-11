@@ -1,5 +1,5 @@
-# mysql-backup
-A docker that is in charge for backing up a mysql database
+mysql-backup
+A docker that is in charge for periodically backing up a mysql database on a daily basis.
 
 Run it inside a docker-compose file
 
